@@ -13,7 +13,7 @@ func main() {
 	var hdpath string
 
 	flag.StringVar(&mnemonic, "mnemonic", "", "Mnemonic")
-	flag.StringVar(&hdpath, "path", "", "HD path")
+	flag.StringVar(&hdpath, "path", "m/44'/60'/0'/0'/0", "HD path")
 	flag.Parse()
 
 	wallet, err := hdwallet.NewFromMnemonic(mnemonic)
